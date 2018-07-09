@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Contact Us </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="design.css">
+	<link rel="icon" href="icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!--[if lt IE 9]>
+<script src=" http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>
+<![endif]-->
+
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="homepage2.html" class="w3-bar-item w3-button">Home</a>
+  <a href="Shopping.html" class="w3-bar-item w3-button">Shopping</a>
+  <a href="meals.html" class="w3-bar-item w3-button">Meals</a>
+  <a href="homecleaning.html" class="w3-bar-item w3-button">Home Cleaning</a>
+  <a  class="w3-bar-item w3-button">Contact Us</a>
+</div>
+
+<div id="main">
+<main>
+<div >
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1 class="title_contact">Contact Us &nbsp;<img src="phone.png" alt="phone" width="40" height="40"></h1>
+  </div>
+</div>
+
+<br><br>
+<div class="w3-container">
+
+<div class="info">
+	<p class="p1">Location:</p>
+	 AMWAY (MALAYSIA) SDN. BHD. (22062-P) AJL93010. 28, JALAN 223,<br> 46100 PETALING JAYA, SELANGOR DARUL EHSAN, MALAYSIA
+	<p class="p1">Contact:</p>
+	 03-7946 2800
+	<p class="p1">Ordering Hour:</p>
+	Monday - Saturday: 11.00am to 9.00pm<br>Sunday: 11.00am to 6.00pm
+	<p class="p1">Operation Hours For Call Center</p>
+	24 hours including Public Holidays
+	
+</div>
+
+<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+<fieldset id="form">
+	<legend class="report"> Enquiry Form</legend>
+<label> Category:</label><br>
+<select>
+	<option>Shopping</option>
+	<option>Meals</option>
+	<option>Home Cleaning</option>
+</select>
+<br>
+<label>Product</label>
+<input type="text" name="Product" class="userName" size="40" required tabindex="1">
+<label>Name*:</label>
+<input type="text" name="Name" class="userName" size="40"  placeholder="&nbsp;Enter Your Name" required tabindex="2" >
+<label> E-mail*: </label>
+<input type="email" name="Email" class="userName" size="40" placeholder="&nbsp;Please enter your email" required tabindex="3">
+<label> Contact*: </label>
+<input type="text" name="Contact" class="userName" size="40" placeholder="&nbsp;01X-XXXXXXX" required tabindex="4">
+<label>Comments:</label>
+<textarea cols="43" rows="5" tabindex="5"></textarea>
+<br>
+<input type="checkbox" name="check">
+I would like to have a copy of this email sent to me.<br>
+<input type="submit" value="Submit" tabindex="6"> &nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" value="Clear" tabindex="7">
+</fieldset>
+</form>
+</div>
+
+</main>
+<br><br>
+
+<footer class="line">
+		<nav class="new1">
+			<a href="homepage2.html" class="bottom"> &nbsp;&nbsp;Home</a>
+			<a href="Shopping.html" class="bottom">&nbsp;&nbsp; Shopping</a>
+			<a href="meals.html" class="bottom">&nbsp;&nbsp; Meals </a>
+			<a href="homecleaning.html" class="bottom"> &nbsp;&nbsp;Home Cleaning </a>
+			<a href="#" class="bottom"> &nbsp;&nbsp;Contact Us</a>
+		</nav>
+		<p class="cc"><small><i>Copyright&copy; 2018 Senior Care</i></small></p>	
+	</footer>
+
+</div>
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "20%";
+  document.getElementById("mySidebar").style.width = "20%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>
